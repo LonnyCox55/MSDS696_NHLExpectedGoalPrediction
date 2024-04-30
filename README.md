@@ -1,4 +1,4 @@
-# **Colorado Avalanche Goal Prediction through Machine Learning**
+# **Colorado Avalanche Goal Prediction with Binary Classifier Models**
 
 MSDS696: Data Science Practicum II
 
