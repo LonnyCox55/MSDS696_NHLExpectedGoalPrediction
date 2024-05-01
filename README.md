@@ -22,7 +22,14 @@ In the sport of hockey, as with all sports nowadays, stat analytics has been hig
 ## How to Run the Project in Google Colab
 
 1. From https://moneypuck.com/data.htm scroll down and locate the "Download Shot Data" section
-2. **Separately** download all the .zip files for each season from 2007
+2. From the data folder of this repo, download all the .zip files ("shots_20XX.zip") from 2007 season to 2023
+3. Move all the .zip files from Step 2 into a Google Drive location of your choosing
+4. Open Google Colab: https://colab.research.google.com/
+5. In Colab, click File > 'Open Notebook'
+6. In the pop-up window, select the GitHub tab, then copy and paste this GitHub repository high level link in the field box: https://github.com/LonnyCox55/MSDS696_NHLExpectedGoalPrediction/tree/main
+7. You should now see the main.ipynb file that can be opened up, click that and the Python Jupyter Notebook file will open in Colab
+8. Edit cell #5 (where the !unzip commands occur) to match where the .zip files were placed in your personal Google Drive folder of choice
+9. Run all cells
 
 ## Dataset Description
 
@@ -49,7 +56,7 @@ The biggest challenge, however, was addressing the data imbalance between the nu
 
 See below for the confusion matrix created by PyCaret depicting the number of true/false positives (goals) and true/false negatives (non-goals) when evaluating the best model from this project:
 
-LJC TO DO: add conf mat image here
+![alt text](images/confMat.png "Confusion Matrix")
 
 From PyCaret, we can also sort the features in order from most important to least important. This is called a feature importance plot, and below we can see the top 10 most important features as determined by our PyCaret-created model:
 
