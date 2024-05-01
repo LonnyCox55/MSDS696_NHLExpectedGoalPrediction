@@ -1,6 +1,6 @@
 # **Colorado Avalanche Goal Prediction with Binary Classifier Models**
 
-![alt text](images/avs.png "The CO Avalanche")
+![alt text](images/avs.PNG "The CO Avalanche")
 
 MSDS696: Data Science Practicum II
 
