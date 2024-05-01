@@ -28,7 +28,7 @@ In the sport of hockey, as with all sports nowadays, stat analytics has been hig
 3. Move all the .zip files from Step 2 into a Google Drive location of your choosing
 4. Open Google Colab: https://colab.research.google.com/
 5. In Colab, click File > 'Open Notebook'
-6. In the pop-up window, select the GitHub tab, then copy and paste this GitHub repository high level link in the field box: https://github.com/LonnyCox55/MSDS696_NHLExpectedGoalPrediction/tree/main
+6. In the pop-up window, select the GitHub tab, then copy and paste this GitHub repository high level link in the field box: [https://github.com/LonnyCox55/MSDS696_NHLExpectedGoalPrediction/tree/main](https://github.com/LonnyCox55/MSDS696_NHLExpectedGoalPrediction)
 7. You should now see the main.ipynb file that can be opened up, click that and the Python Jupyter Notebook file will open in Colab
 8. Edit cell #5 (where the !unzip commands occur) to match where the .zip files were placed in your personal Google Drive folder of choice
 9. Run all cells
