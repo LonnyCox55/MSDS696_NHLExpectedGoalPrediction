@@ -19,6 +19,11 @@ In the sport of hockey, as with all sports nowadays, stat analytics has been hig
 * More media coverage options, such as adding shot statistics real-time to the streams or during replays, amplifying the experience
 * Increased revenue, as sponsorship on certain statistical analysis portions during game coverage ("shot speed, brought to you by Toyota", etc.)
 
+## How to Run the Project in Google Colab
+
+1. From https://moneypuck.com/data.htm scroll down and locate the "Download Shot Data" section
+2. **Separately** download all the .zip files for each season from 2007
+
 ## Dataset Description
 
 Money Puck's website has historical shot-related data from NHL games starting from way back in the 2007-2008 season (in CSV format). This data contains shots from all the NHL teams, and every single unblocked shot is recorded. There are a total of 124 attributes for each of these shots. In total, there are 1,717,746 shots when adding all of the CSV files together for each season (from the 2007-2008 season through the 2022-2023 season). Money Puck updates the CSV file for the current season (2023-2024) regularly with new shot data as the games occur. Money Puck scrapes most of this shot data from the ESPN and NHL websites.
@@ -38,5 +43,16 @@ Some steps taken to clean the NHL shot-related data to fit my project's needs we
 * Fill in missing player position data with "Center", as Centers historically take more shots than any other position in hockey
 * And more...
 
-The biggest challenge, however, was addressing the data imbalance between the number of goal samples versus the number of non-goal samples. In other words, the Avalanche have taken almost 58,000 shots since 2007, but only about 4,000 of those shot went into the net. That means the ratio of goals to non-goals is only approximately 0.07295. Ideally, to train a model we would like that ratio to be closer to 0.5. To address this imbalance, we oversample the minority set (goals) using synthetically generated data, while we strategically undersample the majority (non-goals) to make the decision boundary a little more obvious.
+The biggest challenge, however, was addressing the data imbalance between the number of goal samples versus the number of non-goal samples. In other words, the Avalanche have taken almost 58,000 shots since 2007, but only about 4,000 of those shot went into the net. That means the ratio of goals to non-goals is only approximately 0.07295. Ideally, to train a model we would like that ratio to be closer to 0.5. To address this imbalance, we oversample the minority set (goals) using synthetically generated data (Synthetic Minority Oversampling Technique, or SMOTE for short), while we strategically undersample the majority (non-goals) using Tomek-Links to make the decision boundary a little more obvious.
 
+## Results
+
+See below for the confusion matrix created by PyCaret depicting the number of true/false positives (goals) and true/false negatives (non-goals) when evaluating the best model from this project:
+
+LJC TO DO: add conf mat image here
+
+From PyCaret, we can also sort the features in order from most important to least important. This is called a feature importance plot, and below we can see the top 10 most important features as determined by our PyCaret-created model:
+
+LJC TO DO: add feat import plot here
+
+## Conclusion
