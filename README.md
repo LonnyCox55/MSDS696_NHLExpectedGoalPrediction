@@ -1,5 +1,7 @@
 # **Colorado Avalanche Goal Prediction with Binary Classifier Models**
 
+![alt text](images/avs.png "The CO Avalanche")
+
 MSDS696: Data Science Practicum II
 
 Author: Lonny Cox-Lauf
@@ -60,6 +62,8 @@ See below for the confusion matrix created by PyCaret depicting the number of tr
 
 From PyCaret, we can also sort the features in order from most important to least important. This is called a feature importance plot, and below we can see the top 10 most important features as determined by our PyCaret-created model:
 
-LJC TO DO: add feat import plot here
+![alt text](images/featImp.png "Feature Importance Plot")
 
 ## Conclusion
+
+In summary, the models did not produce results as accurate as initially hoped, but the model is still far more beneficial for predicting goals than simply making a random choice based on how often goals are made. Because of this, I'd consider the project successful. In addition, luck is a very key factor in the game of hockey, and luck is not something easily accounted for in a Machine Learning model. Using an expected goals or goal prediction statistic can be beneficial to the NHL for various reasons, such as providing the Avalanche franchise coaching staff some valuable shot characteristics to practice in order to increase the team's chance for more goalmaking.
