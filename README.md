@@ -6,7 +6,7 @@ MSDS696: Data Science Practicum II
 
 Author: Lonny Cox-Lauf
 
-Link to presentation recording: LJC TO DO add this!
+Link to presentation recording: https://www.youtube.com/watch?v=1CgYX2RS84Y
 
 ## High-Level Project Description
 
